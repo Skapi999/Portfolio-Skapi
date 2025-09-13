@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Skapece - 3D Animator Portfolio</title>
+    <title>Andrea Starace - 3D Animator Portfolio</title>
     
     <!-- Meta tags, Favicon, Font e Icone -->
     <meta property="og:title" content="Andrea Starace - Animator and Visual Development Artis">
@@ -56,7 +56,7 @@
         h1 { font-size: 1.8rem; }
         h2 { font-size: 1.1rem; font-weight: 400; }
         h3 { font-size: 1.5rem; margin-bottom: 1rem; }
-        p { margin-bottom: 1rem; color: var(--colore-testo-secondario); }
+        p { margin-bottom: 1rem; color: var(--colore-testo-secondario); font-size: 16px; }
         strong { color: var(--colore-accento); }
         a { text-decoration: none; color: var(--colore-testo-primario); transition: color 0.2s ease-in-out; }
         a:hover { color: var(--colore-accento); }
@@ -70,7 +70,7 @@
         <section id="sidebar-component">
             <header class="sidebar">
                 <div class="author-info">
-                    <h1>Skapece</h1>
+                    <h1>Andrea Starace</h1>
                     <h2>3d animator</h2>
                 </div>
                 <button class="hamburger-menu" aria-label="Apri o chiudi menu">
@@ -114,7 +114,7 @@
                 .main-nav li { margin-bottom: 32px; }
                 /* [MODIFICA] Rimuove il margine dall'ultimo elemento della lista per un allineamento pulito */
                 .main-nav li:last-child { margin-bottom: 0; }
-                .main-nav a { font-size: 16px; font-weight: 500; cursor: pointer; }
+                .main-nav a { font-size: 18px; font-weight: 500; cursor: pointer; }
                 .main-nav a.active { color: var(--colore-accento); font-weight: 700; }
                 .social-links { margin-top: auto; }
                 .social-links a { font-size: 1.5rem; margin-right: 20px; color: var(--colore-testo-secondario); transition: color 0.2s ease; }
@@ -202,11 +202,17 @@
                             border-radius: 15px;
                             overflow: hidden;
                             box-shadow: 0 8px 30px rgba(0,0,0,0.15);
+                            background: transparent;
+                            position: relative;
                         }
                         .showreel-video-wrapper video {
                             width: 100%;
                             height: auto;
                             display: block;
+                            border-radius: 15px;
+                            border: none;
+                            outline: none;
+                            background: transparent;
                         }
 
                         /* Home Content Styles */
@@ -370,9 +376,9 @@
                             position: relative;
                             aspect-ratio: 16/9;
                             overflow: hidden;
-                            border-radius: 5px;
-                            border: 1px solid #e9ecef;
-                            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+                            border-radius: 8px;
+                            background: transparent;
+                            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
                         }
                         #modal-video {
                             position: absolute;
@@ -380,11 +386,14 @@
                             left: 0;
                             width: 100%;
                             height: 100%;
-                            object-fit: contain;
-                            background-color: black;
+                            object-fit: cover;
+                            border-radius: 8px;
+                            border: none;
+                            outline: none;
+                            background: transparent;
                         }
                         .modal-description-container { flex: 1; overflow-y: auto; }
-                        #modal-description, #modal-video-description { font-size: 14px; line-height: 1.7; color: var(--colore-testo-secondario); }
+                        #modal-description, #modal-video-description { font-size: 16px; line-height: 1.7; color: var(--colore-testo-secondario); }
                         /* Stili per Modal Step-by-Step */
                         #image-modal .modal-content {
                             padding: 30px 35px;
@@ -412,7 +421,7 @@
                             box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
                         }
                         .modal-step p {
-                            flex: 1; margin-bottom: 0; font-size: 14px;
+                            flex: 1; margin-bottom: 0; font-size: 16px;
                             color: var(--colore-testo-secondario);
                         }
                         .modal-step p strong {
